@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(">>>>>>>> Hello World!22222222!");
+            User userOne = new(){ Id = 132, Name = "Jabir"};
+            Console.WriteLine($">>>>>>>> Hello {userOne.Name}!");
         }
     }
 }
