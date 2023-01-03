@@ -10,10 +10,11 @@
             * 2. Commit: git commit -m "any message"
             * 3. Push: git push
             */
-
-            User userOne = new(){ Id = 132, Name = "Jabir"};
+            Console.WriteLine("What is your name?");
+            string? MyName = Convert.ToString(Console.ReadLine());
+            User userOne = new(){ Id = 132, Name = MyName};
             Console.WriteLine($"Hello {userOne.Name}!");
-            Console.WriteLine(userOne.SaySomething());
+            userOne.SaySomething();
         }
     }
 }
